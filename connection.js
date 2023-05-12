@@ -6,10 +6,10 @@ require('dotenv').config();
 
 app.use(express.json());
 
-app.listen(5555, ()=> {
+// app.listen(5555, ()=> {
 
-    console.log(`apis is listening on ${5555}`);
-});
+//     console.log(`apis is listening on ${5555}`);
+// });
 
 mongoose.connect(process.env.dbUrl).then((value)=> {
     console.log(`value is ${value}`);
