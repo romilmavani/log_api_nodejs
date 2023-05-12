@@ -10,7 +10,7 @@ app.use(express.json());
 
 //     console.log(`apis is listening on ${5555}`);
 // });
-
+mongoose.set('strictQuery', false);
 mongoose.connect(process.env.dbUrl).then((value)=> {
     console.log(`value is ${value}`);
     console.log('database connected.. ');
